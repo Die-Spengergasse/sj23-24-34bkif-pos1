@@ -8,3 +8,11 @@ Material und Code zum Unterricht
 -   Bluej installieren
 -   eigenen Github user anlegen
 -   repository erstellen (für Kommunikaton m. Lehrer)
+
+## Java:
+
+-   Kommentare: Block /_ ... _/
+-   Kommen. Zeile: //
+-   eine Klasse / viele Instanzen (synonym Objekte)
+-   Konvention: camelCase
+-   variablenNamen beginnen immer mit kleinBuchstaben
