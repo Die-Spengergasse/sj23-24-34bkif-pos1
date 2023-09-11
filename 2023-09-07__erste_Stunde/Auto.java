@@ -1,10 +1,10 @@
 public class Auto
 {
-    int raeder;
+    int raeder;  // Deklaration
 
     public Auto(int mitgegebenerWert)  // Parameter für den Konstruktor
     {
-        raeder = mitgegebenerWert;
+        this.raeder = mitgegebenerWert;
         System.out.println("beep " + this.raeder);      
     }
 

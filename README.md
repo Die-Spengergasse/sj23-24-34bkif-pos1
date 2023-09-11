@@ -13,6 +13,11 @@ Material und Code zum Unterricht
 
 2023-09-11
 
+-   Methoden werden aufgerufen
+-   haben eine "Signatur"
+-   returnen einen Wert (oder nicht: void)
+-   bekommen "Parameter" mit
+-   git clone / pull
 -   Datentypen: int (Integer.MAX_VALUE, ) Vorsicht: evtl. "Overflow"
 -   long
 -   Variablen haben einen Namen
