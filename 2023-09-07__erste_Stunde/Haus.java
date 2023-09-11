@@ -1,25 +1,19 @@
-
-// Kommentar bis Zeilen-Ende
-
 public class Haus
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
-    
-    // Constructor for objects of class Haus
-    
-    
+    private long x;  // x ist ein Attribut der Klasse Haus
+
     public Haus()
     {
         // initialise instance variables
-        x = 0;
+        x = Long.MAX_VALUE;
+
     }
 
-    
-    public int sampleMethod(int y)
+    public void printX ()
     {
         // put your code here
-        return x + y;
+        System.out.println(x); 
+        System.out.println(x+1);
     }
 }
