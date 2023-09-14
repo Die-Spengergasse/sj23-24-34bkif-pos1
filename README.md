@@ -10,6 +10,14 @@ Material und Code zum Unterricht
 -   repository erstellen (für Kommunikaton m. Lehrer)
 
 ## Java:
+2023-09-14
+
+- **git clone & pull**
+- Working Dir ausgeben: `echo %cd%` oder `pwd`
+- wohin wechseln: `cd` oder `D:`
+- "Open in Terminal" Kontextmenü oder "open git bash"
+- Unicode besprochen
+- Datentypen wiederholt
 
 2023-09-11
 
