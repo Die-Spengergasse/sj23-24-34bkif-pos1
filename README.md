@@ -2,22 +2,28 @@
 
 Material und Code zum Unterricht
 
-## TODOS
+## Inhalte kommend:
 
--   Eigenen Notebook besorgen
--   Bluej installieren
--   eigenen Github user anlegen
--   repository erstellen (für Kommunikaton m. Lehrer)
+2023-09-18
 
-## Java:
+-   getter / setter
+-   Signaturen
+-   Parameterprüfungen / throw
+-   skriptum: Lokale Variablen + Berechnungen
+-   Referenzdatentypen
+-   Verwendung von Git: Kann ich die aktuellen Änderungen sehen? .. Kommend:
+    Pushen in ein eigenes Repository!
+
+## Inhalte besprochen:
+
 2023-09-14
 
-- **git clone & pull**
-- Working Dir ausgeben: `echo %cd%` oder `pwd`
-- wohin wechseln: `cd` oder `D:`
-- "Open in Terminal" Kontextmenü oder "open git bash"
-- Unicode besprochen
-- Datentypen wiederholt
+-   **git clone & pull**
+-   Working Dir ausgeben: `echo %cd%` oder `pwd`
+-   wohin wechseln: `cd` oder `D:`
+-   "Open in Terminal" Kontextmenü oder "open git bash"
+-   Unicode besprochen
+-   Datentypen wiederholt
 
 2023-09-11
 
