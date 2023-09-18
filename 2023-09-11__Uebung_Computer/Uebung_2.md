@@ -2,6 +2,8 @@ Aufgaben:
 
 Implementieren Sie alle Konstruktoren fertig.
 
+Setzen Sie Default-Werte, wenn nötig.
+
 Stellen Sie sicher, daß die PS im Bereich von 30 bis 300 sind!
 
 Stellen Sie sicher, daß die Marke nur eine der drei im Code genannten ist
