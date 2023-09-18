@@ -8,6 +8,9 @@ Material und Code zum Unterricht
 
 -   getter / setter
 -   Signaturen
+-   **Eindeutige Signatur durch**
+    -   Methodenname, Datentypen der Parameter
+    -   Rückgabe-Datentyp zählt _nicht_ zur Signatur!
 -   Parameterprüfungen / throw
 -   skriptum: Lokale Variablen + Berechnungen
 -   Referenzdatentypen
