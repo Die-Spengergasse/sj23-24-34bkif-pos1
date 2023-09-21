@@ -6,6 +6,17 @@ https://education.github.com/git-cheat-sheet-education.pdf
 
 ## Inhalte kommend:
 
+2023-09-25
+
+-   Testklasse / try / catch
+
+2023-09-21
+
+-   Üben (Person)
+-   BMI
+
+## Inhalte besprochen:
+
 2023-09-18
 
 -   getter / setter
@@ -18,8 +29,6 @@ https://education.github.com/git-cheat-sheet-education.pdf
 -   Referenzdatentypen
 -   Verwendung von Git: Kann ich die aktuellen Änderungen sehen? .. Kommend:
     Pushen in ein eigenes Repository!
-
-## Inhalte besprochen:
 
 2023-09-14
 
