@@ -4,6 +4,12 @@ Material und Code zum Unterricht
 
 https://education.github.com/git-cheat-sheet-education.pdf
 
+# Wie kriege ich meinen Git Ordner wieder sauber:
+
+```
+$ git reset --hard
+```
+
 ## Inhalte kommend:
 
 2023-09-25
