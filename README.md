@@ -4,19 +4,11 @@ Material und Code zum Unterricht
 
 https://education.github.com/git-cheat-sheet-education.pdf
 
-# Übung 21.9.
-
-1) git pull
-2) heutigen Ordner wegkopieren
-3) und im bluej öffnen
-4) In der Testklasse weitere Auto-Variablen erzeugen, welche jeweils im Konstr.
-ein Auto mit anderen Signaturen erzeugt.
-
-
 # Wie kriege ich meinen Git Ordner wieder sauber:
 
 ```
 $ git reset --hard
+$ git clean -f
 ```
 
 Alternativ: Alles wegschmeißen und `git clone`.
@@ -25,6 +17,7 @@ Alternativ: Alles wegschmeißen und `git clone`.
 
 2023-09-25
 
+-   wahrheitstablle!
 -   Testklasse / try / catch
 
 2023-09-21
