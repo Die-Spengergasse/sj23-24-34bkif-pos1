@@ -30,6 +30,7 @@ public class Auto
     }
 
     public void setPS(int neuPS) {
+
         if (neuPS < 30) {
             System.err.println("FEHLER: Zu wenige PS!");
             throw new IllegalArgumentException("FEHLER: Zu wenige PS!");
