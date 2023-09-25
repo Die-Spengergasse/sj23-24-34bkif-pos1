@@ -1,5 +1,11 @@
 # sj23-24-34bkif-pos1
 
+## Test Termine
+
+-   16.10.
+-   14.12.
+-   22.1.
+
 Files hier:
 
 -   2023-\* Übungsverzeichnisse
