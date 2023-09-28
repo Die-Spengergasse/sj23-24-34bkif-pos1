@@ -2,7 +2,6 @@
 
 ## Upcoming Topics
 
--   null Referenzwerte
 -   Javadoc
 -   Üben (Person) BMI
 

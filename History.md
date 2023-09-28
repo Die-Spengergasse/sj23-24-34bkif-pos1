@@ -1,5 +1,9 @@
 ## Inhalte besprochen:
 
+2023-09-28
+
+-   null Referenzwerte und deren prüfung
+
 2023-09-21
 
 -   wahrheitstablle!
