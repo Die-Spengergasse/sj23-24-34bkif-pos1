@@ -1,5 +1,10 @@
 ## Inhalte besprochen:
 
+2023-09-21
+
+-   wahrheitstablle!
+-   Testklasse / try / catch
+
 2023-09-18
 
 -   getter / setter
