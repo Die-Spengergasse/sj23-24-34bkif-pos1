@@ -47,16 +47,23 @@ public class Auto
     }
 
     public void setMarke (String neuMarke) {
-        if (!(neuMarke.equals("VW") || neuMarke.equals("Audi") || neuMarke.equals("Skoda"))) {
-            this.marke = neuMarke;
-        } else {
+        // Test jetzt if NOT OK!!
+        if (neuMarke == null 
+        || !neuMarke.equals("VW") 
+        || !neuMarke.equals("Audi") 
+        || !neuMarke.equals("Skoda")) {
             throw new IllegalArgumentException("FEHLER: Marke ist keine der erlaubten!");
+        } else {
+            this.marke = neuMarke;
         }
     }
 
     public void setFarbe(String neuFarbe) {
         // TODO implement
         // fünf Farben aussuchen
+        if (neuFarbe == null) {
+            throw new IllegalArgumentException("FEHLER: Farbe ist null, was verboten ist");
+        }
         if (neuFarbe.equals("rot")
         || neuFarbe.equals("grün")
         || neuFarbe.equals("blau")

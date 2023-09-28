@@ -14,8 +14,14 @@ public class TestAuto
     public boolean testSetzeMarkeInteraktiv (String neuMarke) {
         // return true, wenn new Auto () korrekt arbeitet!!!
         // sonst false
-        boolean isNull = neuMarke == null;
-        boolean sollKlappen = neuMarke.equals("VW") || neuMarke.equals("Audi") || neuMarke.equals("Skoda");
+        // muss mich kpmmern, dass neuMarke nicht null ist:
+        boolean sollKlappen; 
+        if (neuMarke == null) {
+            sollKlappen = false;
+        } else {
+            // Folgender Code verläßt sich darauf, dass neuMarke NOT NULL ist!!
+            sollKlappen = neuMarke.equals("VW") || neuMarke.equals("Audi") || neuMarke.equals("Skoda");
+        }
         try {
             Auto testAuto = new Auto (90, neuMarke);
             if (sollKlappen) {
@@ -90,7 +96,6 @@ public class TestAuto
         return testSuccessful;
     }
 
-    
     
 }
 
