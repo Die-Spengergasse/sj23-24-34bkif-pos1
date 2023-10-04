@@ -1,5 +1,11 @@
 ## Inhalte besprochen:
 
+2023-10-20
+
+-   Javadoc
+-   static (kein objekt, kein "this")
+-   ordentliches Testen in bluej
+
 2023-09-28
 
 -   null Referenzwerte und deren prüfung
