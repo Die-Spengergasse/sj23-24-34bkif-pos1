@@ -21,8 +21,9 @@ public class Person
         this.groesse = groesse;
     }
 
+    // Name darf nicht null und auch nicht leer sein
     public void setName(String name) {
-        if (name == null) {
+        if (name == null || name.equals("")  ) {
             System.out.println("Fehler: name null");
             throw new IllegalArgumentException("Name darf nicht null sein!");
         } else {
@@ -37,6 +38,13 @@ public class Person
         this.gewicht = gewicht;
     }
 
+    public String toString () {
+        return "Name: " + name + "Groesse: " + groesse + "cm, Gewicht: " + gewicht;
+    }
+    public void printPerson () {
+        System.out.println(this);
+    }
+    
     public String getName () {
         return name;
     }
@@ -48,5 +56,9 @@ public class Person
     }
     public int getGewicht () {
         return gewicht;
+    }
+    public float bmiBerechnen () {
+        float groesseInM = groesse/100f;
+        return gewicht/(groesseInM*groesseInM);
     }
 }
