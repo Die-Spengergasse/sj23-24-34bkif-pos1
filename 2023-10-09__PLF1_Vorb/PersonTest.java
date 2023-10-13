@@ -125,5 +125,16 @@ public class PersonTest
         assertEquals(18.991964938f, person1.bmiBerechnen(), 0.000001);
         person1.printPerson();
     }
+
+    @Test
+    public void testBMIAusgeben()
+    {
+        Person person2 = new Person("Georg", true, 178, 77);
+        assertEquals("24.302488 Normalgewicht", person2.bmiAusgeben());
+        person2 = new Person("Georg", true, 178, 45);
+        assertEquals("24.302488 Normalgewicht", person2.bmiAusgeben());
+        
+    }
 }
+
 
