@@ -41,24 +41,66 @@ public class Person
     public String toString () {
         return "Name: " + name + "Groesse: " + groesse + "cm, Gewicht: " + gewicht;
     }
+
     public void printPerson () {
         System.out.println(this);
     }
-    
+
     public String getName () {
         return name;
     }
+
     public boolean getMaennlich() {
         return this.maennlich; // auch möglich
     }
+
     public int getGroesse () {
         return groesse;
     }
+
     public int getGewicht () {
         return gewicht;
     }
+
     public float bmiBerechnen () {
         float groesseInM = groesse/100f;
         return gewicht/(groesseInM*groesseInM);
     }
+
+    public String bmiAusgeben () {
+        float bmi = bmiBerechnen ();
+        String ausgabe = bmi + " ";
+        if (maennlich) {  // Werte für Männer nehmen
+            if (bmi <  20) {
+                ausgabe = bmi + " Untergewicht";
+            } else {
+                if (bmi > 25) {
+                    ausgabe = ausgabe + "Übergewicht";
+                }
+                else {
+                    ausgabe = ausgabe + "Normalgewicht";
+                }
+            }
+        } else {  // Werte für Frauen nehmen  (19, 24)
+            if (bmi <  19) {
+                ausgabe = bmi + " Untergewicht";
+            } else {
+                if (bmi > 24) {
+                    ausgabe = ausgabe + "Übergewicht";
+                }
+                else {
+                    ausgabe = ausgabe + "Normalgewicht";
+                }
+            }
+
+        }
+        System.out.println (ausgabe);
+        return ausgabe;
+    }
+
+    
+    
+    
+    
+    
 }
