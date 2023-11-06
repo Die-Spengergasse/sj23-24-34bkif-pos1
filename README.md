@@ -1,14 +1,13 @@
 # sj23-24-34bkif-pos1
 
-## Upcoming Topics
+## Nach Herbstferien
 
--   Übungsblatt Signatur
--   Üben (Person) BMI
+-   intellij / static main
+-   schleifen / prim / fibonacci
+-   zeichnen / Quadrat usw.
 
 ## Test Termine
 
--   9.10. Übung im Labor
--   16.10.
 -   14.12.
 -   22.1.
 

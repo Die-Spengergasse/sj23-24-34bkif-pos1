@@ -2,3 +2,5 @@
 *.class
 package.bluej
 out
+.vscode
+.idea

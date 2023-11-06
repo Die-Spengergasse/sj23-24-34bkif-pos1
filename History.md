@@ -1,5 +1,10 @@
 ## Inhalte besprochen:
 
+2023-10-23
+
+-   Übungsblatt Signatur
+-   Üben (Person) BMI
+
 2023-10-20
 
 -   Javadoc
