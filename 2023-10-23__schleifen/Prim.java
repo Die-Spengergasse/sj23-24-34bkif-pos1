@@ -10,10 +10,20 @@
 
 public class Prim {
     public static void main(String[] args) {
-        // TODO implement
+        for (int testWert = 2; testWert <= 300; testWert++) {
+            if (!istTeilbar(testWert)) {
+                System.out.println("Primzahl: " + testWert);
+            }
+        }
     }
 
-    public static boolean isPrime(int arg) {
-        return false; // TODO implement
+    public static boolean istTeilbar(int arg) {
+        for (int teilVersuch = 2; teilVersuch < arg; teilVersuch++) {
+            if (arg % teilVersuch == 0) {
+                // teilbar ohne Rest, also nicht prim
+                return true;
+            }
+        }
+        return false;
     }
 }
