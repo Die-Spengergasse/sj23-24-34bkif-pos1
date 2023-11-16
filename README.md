@@ -1,5 +1,7 @@
 # sj23-24-34bkif-pos1
 
+## schleifen, arrays und String Methode kombinieren!
+
 ## Übung Mersenne Zahlen ab 13.11.
 
 ## Aufgabe bis 13.11.
