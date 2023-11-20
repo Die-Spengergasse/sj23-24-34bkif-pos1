@@ -1,5 +1,14 @@
 # sj23-24-34bkif-pos1
 
+## Assignment vom 20.11.2023
+
+<https://classroom.github.com/a/BMcRwQYN>
+
+- in github anmelden und repo clonen
+- pirat und schiff implementieren mit einem
+- **UNTERSCHIED**: Es sind arrays zu verwenden!
+- Testklassen zuerst! (TDD: Test-Driven-Development)
+
 ## schleifen, arrays und String Methode kombinieren!
 
 ## Übung Mersenne Zahlen ab 13.11.
