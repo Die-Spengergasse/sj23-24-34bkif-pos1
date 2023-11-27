@@ -4,6 +4,10 @@
 
 <https://classroom.github.com/a/4-3D-CO8>
 
+Projektstand Ende Stunde:
+
+<https://github.com/Die-Spengergasse/sj23-24-pos-java-piraten.git>
+
 ## Assignment vom 20.11.2023
 
 <https://classroom.github.com/a/BMcRwQYN>
