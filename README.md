@@ -1,5 +1,9 @@
 # sj23-24-34bkif-pos1
 
+## Assignment vom 27.11.2023
+
+<https://classroom.github.com/a/4-3D-CO8>
+
 ## Assignment vom 20.11.2023
 
 <https://classroom.github.com/a/BMcRwQYN>
