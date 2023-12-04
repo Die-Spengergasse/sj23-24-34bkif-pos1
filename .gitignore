@@ -4,3 +4,4 @@ package.bluej
 out
 .vscode
 .idea
+*.iml
