@@ -2,6 +2,7 @@
 *.class
 package.bluej
 out
+target
 .vscode
 .idea
 *.iml
