@@ -8,7 +8,7 @@ plf2-vorbereitung-invite
 
 ## google link
 
-<https://meet.google.com/nbd-rqgw-mvd>
+<https://meet.google.com/ihz-qoew-jmq>
 
 
 ## Assignment vom 27.11.2023
