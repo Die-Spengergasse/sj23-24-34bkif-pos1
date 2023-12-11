@@ -1,5 +1,11 @@
 # sj23-24-34bkif-pos1
 
+##
+
+plf2-vorbereitung-invite
+
+<https://classroom.github.com/a/Jc19AV0y>
+
 ## google link
 
 <https://meet.google.com/nbd-rqgw-mvd>
