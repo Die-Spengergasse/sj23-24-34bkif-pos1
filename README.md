@@ -1,5 +1,10 @@
 # sj23-24-34bkif-pos1
 
+## google link
+
+<https://meet.google.com/nbd-rqgw-mvd>
+
+
 ## Assignment vom 27.11.2023
 
 <https://classroom.github.com/a/4-3D-CO8>
