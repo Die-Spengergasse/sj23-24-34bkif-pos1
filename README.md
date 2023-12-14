@@ -1,5 +1,9 @@
 # sj23-24-34bkif-pos1
 
+## PLF2 Invite
+
+<https://classroom.github.com/a/rYpnAHHD>
+
 ##
 
 plf2-vorbereitung-invite
