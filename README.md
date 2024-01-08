@@ -1,5 +1,9 @@
 # sj23-24-34bkif-pos1
 
+## 8. Jänner
+
+-   Auflösung PLF und Noten
+
 ## PLF2 Auflösung und Anregungen für die Freizeit
 
 -   Im Ordner `2023-12-21__PLF2_um/` sind meine Testklassen zu finden, mit

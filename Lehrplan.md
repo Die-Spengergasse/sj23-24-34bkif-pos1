@@ -1,0 +1,8 @@
+-   stringbuilder
+-   arrays sort (bubble, selection)
+-   objekt - arrays
+-   doppelseitige referenzen
+-   objekt - vergleiche
+-   collections
+-   boxing
+-   vererbung: Lektüre Skriptum
