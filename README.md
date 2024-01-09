@@ -1,5 +1,15 @@
 # sj23-24-34bkif-pos1
 
+## 11. Jänner
+
+-   sortieren eines Arrays mit Objekten (2024-01-11 personen)
+
+## Stoff 22.1.
+
+-   Array Excel Funktionen
+-   Array Sort Objekte
+-   irgendwas mit signatur
+
 ## 8. Jänner
 
 -   Auflösung PLF und Noten
