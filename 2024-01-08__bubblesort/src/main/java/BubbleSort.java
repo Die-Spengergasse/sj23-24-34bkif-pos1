@@ -8,7 +8,8 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        BubbleSort instanz = new BubbleSort(new int[]{4, 8, 1, 4, 9, 1, 2, -1, 3, 7, 4});
+        //  BubbleSort instanz = new BubbleSort(new int[]{4, 8, 1, 4, 9, 1, 2, -1, 3, 7, 4});
+        BubbleSort instanz = new BubbleSort(new int[]{3,2,1});
         System.out.println(instanz);
         instanz.bubbleSort();
         System.out.println(instanz);
@@ -17,7 +18,7 @@ public class BubbleSort {
     public void bubbleSort() {
         for (int obergrenze = intArray.length; obergrenze > 1; obergrenze--) {
             for (int i = 1; i < obergrenze; i++) {
-                if (intArray[i] < intArray[i - 1]) {
+                if (intArray[i - 1] > intArray[i]) {
                     tausche(i, i - 1);
                 }
             }
@@ -35,3 +36,17 @@ public class BubbleSort {
         return Arrays.toString(this.intArray);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
