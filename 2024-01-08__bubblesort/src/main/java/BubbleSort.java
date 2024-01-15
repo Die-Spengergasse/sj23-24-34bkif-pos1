@@ -22,7 +22,6 @@ public class BubbleSort {
                     tausche(i, i - 1);
                 }
             }
-
         }
     }
 
