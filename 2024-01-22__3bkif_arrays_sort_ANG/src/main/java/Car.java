@@ -1,35 +1,41 @@
-public class Car implements Comparable<Car> {
+public class Car {
     private String name;
     private int topSpeed;
 
     public Car(String name, int topSpeed) {
-// TODO implement
+        setName(name);
+        setTopSpeed(topSpeed);
+
     }
 
     public String getName() {
-        // TODO: implement
-        return null;
+
+        return  this.name;
     }
 
     public void setName(String name) {
-        // TODO: not null check (throw IllegalArgumentException)
-        // TODO: minlength 5 check (throw IllegalArgumentException)
+        if (name == null || name.length() < 5) {
+            throw new IllegalArgumentException("name null oder zu kurz");
+        }
+    this.name = name;
     }
 
     public int getTopSpeed() {
-        // TODO implement
-        return -1;
+
+        return this.topSpeed;
     }
 
     public void setTopSpeed(int topSpeed) {
         // TODO: minimum 50 (throw IllegalArgumentException)
         // TODO: maximum 500 (throw IllegalArgumentException)
-        // TODO: implement
+        if (topSpeed < 50 || topSpeed > 500) {
+            throw new IllegalArgumentException("topSpeed zu klein oder zu gross");
+        }
+        this.topSpeed = topSpeed;
     }
 
-    @Override
-    public int compareTo(Car o) {
-        // TODO: implement
-        return 0;
+
+    public int compareTo(Car other) {
+        return this.getTopSpeed() - other.getTopSpeed();
     }
 }

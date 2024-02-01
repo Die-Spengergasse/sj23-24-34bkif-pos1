@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CarTest {
+class CarTest extends Object {
     private Car[] cars;
     private CarCompany carCompany;
 
@@ -95,5 +95,11 @@ class CarTest {
         carCompany.sortCars();
         Car[] sortedCars = Arrays.stream(cars).sorted().toArray(Car[]::new);
         assertArrayEquals(sortedCars, carCompany.getCars());
+    }
+    @Test
+    void strcomp () {
+        String[] x = {"a", "b", "c", " ", "_","ß","z","A", "B", "C"};
+        Arrays.sort(x);
+        System.out.println(Arrays.toString(x));
     }
 }
