@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class PersonSort {
@@ -10,14 +8,18 @@ public class PersonSort {
         }
         ArrayList<Person> personenArrayList = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(args[0]));
-        for (String line = reader.readLine(); line != null; line = reader.readLine()) {
+        String line = reader.readLine();
+        while (null != (line = reader.readLine())) {
             personenArrayList.add(new Person(line));  // TODO hier könnten Exeptions passieren
         }
         reader.close();
         personenArrayList.sort(null);
+        BufferedWriter writer = new BufferedWriter(new FileWriter(args[1]));
         for (Person p: personenArrayList) {
-            // outfile.write(p.toString())
+            writer.write(p.toString());
+            writer.newLine();
         }
+
     }
 }
 
