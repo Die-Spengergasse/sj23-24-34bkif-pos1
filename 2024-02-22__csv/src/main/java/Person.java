@@ -5,6 +5,7 @@ public class Person implements Comparable<Person> {
     private float groesseM;
     private int gewicht;
     private String csvLine;
+
     public Person(String csvLine) {
         this.csvLine = csvLine;
         String[] splitter = csvLine.split(";");
@@ -36,9 +37,26 @@ public class Person implements Comparable<Person> {
     }
 
     private float getBMI() {
-        return this.gewicht/(this.groesseM*this.groesseM);
+        return this.gewicht / (this.groesseM * this.groesseM);
     }
 
+    public boolean isUntergewichtig() {  // 19.1 bzw. 20.1
+        if (sex == 'f') {
+            return getBMI() < 19.1;
+        }
+        return getBMI() < 20.1;
+    }
+
+    public boolean isUebergewichtig() {
+        if (sex == 'f') {
+            return getBMI() > 24;
+        }
+        return getBMI() > 25;
+    }
+
+    public boolean isNormalgewichtig () {
+        return !isUntergewichtig() && !isUebergewichtig();
+    }
     @Override
     public String toString() {
         return this.csvLine;
