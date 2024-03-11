@@ -1,5 +1,4 @@
 const { fakerDE, fakerEN } = require('@faker-js/faker');
-
 for (let i = 0; i < 1000; i++) {
     const sex = fakerEN.person.sex();
     const fullName = fakerDE.person.fullName({ sex: sex });

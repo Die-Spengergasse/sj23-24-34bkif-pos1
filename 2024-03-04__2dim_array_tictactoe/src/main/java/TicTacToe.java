@@ -11,6 +11,14 @@ public class TicTacToe {
                 try {
                     System.out.println("Enter your placement (1-9):");
                     int playerPos = scan.nextInt();
+                    Integer bestChoice = gameboard.gewinnPlatz(true);
+                    if (bestChoice!=null && bestChoice != playerPos) {
+                        System.out.println("Hey you could have won!");
+                    }
+                    bestChoice = gameboard.gewinnPlatz(false);
+                    if (bestChoice!=null && bestChoice != playerPos) {
+                        System.out.println("Hey now I win");
+                    }
                     gameboard.placePiece(playerPos, true);
                     break;
                 } catch (Exception e) {

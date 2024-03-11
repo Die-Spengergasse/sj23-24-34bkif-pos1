@@ -174,7 +174,7 @@ return rv;
         assert (!freieFelder.isEmpty());
         return freieFelder.get(rnd.nextInt(freieFelder.size()));
     }
-    private Integer gewinnPlatz(boolean player) {
+    public Integer gewinnPlatz(boolean player) {
         for (int i = 0; i < 3; i++) {  // i Zeile bzw. Spalte
             if (isOnTwoPlacesInArrayAndTheThirdIsNull(getZeile(i), player)) {
                 // gefunden!!! Zeile
