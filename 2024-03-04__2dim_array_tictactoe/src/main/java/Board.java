@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Board {
     // true: player 'X'
     // false: CPU   'O'
     // null: free
     private Boolean[][] fields;
+    Random rnd;
 
     public Board() {
         fields = new Boolean[3][3];
+        rnd = new Random();
     }
 
     public void placePiece(int place, boolean player) {
@@ -39,8 +44,8 @@ public class Board {
 
     private Boolean[] getDiagonaleRechts() {
         Boolean[] rv = new Boolean[3];
-        for (int nummer = 0; nummer < 3; nummer++) {
-            rv[nummer] = fields[nummer][2 - nummer];
+        for (int zeile = 0; zeile < 3; zeile++) {
+            rv[zeile] = fields[zeile][2 - zeile];
         }
 return rv;
     }
@@ -59,7 +64,9 @@ return rv;
         }
         return (place - 1) % 3;
     }
-
+    private int getPlaceFromZeileUndSplate(int zeile, int spalte) {
+        return zeile*3 + spalte +1;
+    }
     @Override
     public String toString() {
         String leerZeile = "+-+-+-+\n";
@@ -93,7 +100,27 @@ return rv;
         }
         return true;
     }
-
+    boolean isOnTwoPlacesInArrayAndTheThirdIsNull (Boolean[] dreierArray, boolean player) {
+        int nullCount = 0;
+        int playerCount = 0;
+        int otherCount = 0;
+        for (int i = 0; i < dreierArray.length; i++) {
+            if (dreierArray[i] == null) {
+                nullCount++;
+                continue;
+            }
+            if (dreierArray[i] == player) {
+                playerCount++;
+                continue;
+            }
+            otherCount++;
+        }
+        if (playerCount==2 && nullCount==1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     boolean isOnAllPlacesInArray(Boolean[] dreierArray, boolean player) {
         for (int i = 0; i < dreierArray.length; i++) {
             if (dreierArray[i] == null) {
@@ -118,5 +145,59 @@ return rv;
         }
         // allen spalten suchen
         return false;
+    }
+    private int whereIsNull (Boolean[] dreierArray) {
+        for (int i = 0; i< dreierArray.length; i++) {
+            if (dreierArray[i] == null) return i;
+        }
+        throw new IllegalStateException("Now you need a debugger!");
+    }
+    public int findBestPlaceFor(boolean player) {
+        Integer result;
+        result = gewinnPlatz(player);
+        if (result != null) {
+            return result;  // ich gewinne!
+        }
+        result = gewinnPlatz(!player);
+        if (result != null) {
+            return result;  // gegner würde sonst gewinnen
+        }
+        if (fields[1][1] == null) {
+            return getPlaceFromZeileUndSplate(1,1);
+        }
+        ArrayList<Integer> freieFelder = new ArrayList<>();
+        for (int place = 1; place <=9; place++) {
+            if (fields[getZeileNrFromPlace(place)][getSpalteNrFromPlace(place)] == null) {
+                freieFelder.add(place);
+            }
+        }
+        assert (!freieFelder.isEmpty());
+        return freieFelder.get(rnd.nextInt(freieFelder.size()));
+    }
+    private Integer gewinnPlatz(boolean player) {
+        for (int i = 0; i < 3; i++) {  // i Zeile bzw. Spalte
+            if (isOnTwoPlacesInArrayAndTheThirdIsNull(getZeile(i), player)) {
+                // gefunden!!! Zeile
+                int nullSpalte = whereIsNull(getZeile(i));
+                return getPlaceFromZeileUndSplate(i, nullSpalte);
+            }
+            // i wird ab hier als spalte gesehen
+            if (isOnTwoPlacesInArrayAndTheThirdIsNull(getSpalte(i), player)) {
+                int zeileMitNull = whereIsNull(getSpalte(i));
+                return getPlaceFromZeileUndSplate(zeileMitNull, i);
+            }
+        }
+        Boolean[] diagonale;
+        diagonale = getDiagonaleLinks();
+        if (isOnTwoPlacesInArrayAndTheThirdIsNull(diagonale, player)) {
+            int nullPlace = whereIsNull(diagonale);
+            return getPlaceFromZeileUndSplate(nullPlace, nullPlace);
+        }
+        diagonale = getDiagonaleRechts();
+        if (isOnTwoPlacesInArrayAndTheThirdIsNull(diagonale, player)) {
+            int nullPlace = whereIsNull(diagonale);
+            return getPlaceFromZeileUndSplate(nullPlace, 2-nullPlace);
+        }
+        return null;  // player kann nicht jetzt gewinnen
     }
 }

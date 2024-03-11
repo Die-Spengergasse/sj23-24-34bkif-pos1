@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -29,13 +28,8 @@ public class TicTacToe {
                 System.out.println("Both win, board is full");
                 break;
             }
-            while (true) {
-                try {
-                    gameboard.placePiece(rand.nextInt(9) + 1, false);
-                    break;
-                } catch (Exception e) {
-                }
-            }
+            // CPU spielt:
+            gameboard.placePiece(gameboard.findBestPlaceFor(false), false);
             System.out.println(gameboard);
             if (gameboard.checkWinner(false)) {
                 System.out.println("CPU wins");
