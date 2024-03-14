@@ -1,9 +1,20 @@
 # sj23-24-34bkif-pos1
 
+## Stoff für 14.3. UND 21.3.
+
+-   csv Datei einlesen und aus den Records Objekte machen
+-   ArrayList
+-   sort() mittels
+-   -   Comparable (=Interface) !Elemente müssen das Interface implementieren!
+-   -   Comparator (=Interface) eigene Implenentierung für
+        arrayList.sort(compartor-instanz) (siehe
+        "./2024-02-19\_\_arraylist/src/main/java/SortierKriterium.java")
+-   2-dimensionale Arrays
+
 ## PLF
 
-- 21.3.
-- 2.5.
+-   21.3.
+-   2.5.
 
 ## 11. Jänner
 
