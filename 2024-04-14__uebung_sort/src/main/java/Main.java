@@ -4,15 +4,21 @@
 // - nach Name
 // - nach Gewicht
 // ====================
-// Sortiert nach ID:
+// Sortiert nach ID (als natürliche Sortierung)
 // .
 // .
 // .
-// Sortiert nach Name:
+// Sortiert nach Name (mittels Comparator)
 // .
 // .
 // .
-// Sortiert nach Gewicht:
+// Sortiert nach Gewicht: (mittels Comparator)
 // .
 // .
 // .
+class Main implements Comparable {
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+}

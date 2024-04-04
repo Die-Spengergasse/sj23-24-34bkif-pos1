@@ -3,6 +3,7 @@
 ## Stoff für 14.3. UND 21.3.
 
 -   csv Datei einlesen und aus den Records Objekte machen
+-   try-with-ressources verwenden
 -   ArrayList
 -   sort() mittels
 -   -   Comparable (=Interface) !Elemente müssen das Interface implementieren!
