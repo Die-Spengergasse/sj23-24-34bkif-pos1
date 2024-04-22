@@ -1,5 +1,18 @@
 # sj23-24-34bkif-pos1
 
+## Offener Stoff vor Vaadin
+
+-   Lambdas / functional Interfaces / `.. :: ..` syntax
+- packages
+-   Linked List
+-   Iterator (siehe BufferedReader!)
+-   statische Methoden wiederholen
+-   ternärer Operator `.. ? .. : ..`
+-   Vererbung / abstract / interface / polymorphie
+-   Exceptions / finally
+-   Serialisierung / `ObjectOutputStream::writeObject()`
+-   Streams API
+
 ## Stoff für 14.3. UND 21.3.
 
 -   csv Datei einlesen und aus den Records Objekte machen
