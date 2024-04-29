@@ -1,5 +1,9 @@
 ## SÜ 11.4.2024
 
+## Aufruf
+
+java -cp target/classes Main Kristofer
+
 ### Aufgabe 1 HashSet erstellen
 
 Ermitteln Sie, wieviele tierarten in der Datei "tierarten.csv" drinnen sind, und
