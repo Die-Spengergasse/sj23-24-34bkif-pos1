@@ -36,12 +36,12 @@ Geben Sie a) alle eindeutigen Paare aus, mit Hilfe der toString() Methode im
 In der Datei "tiere.csv" sind Tiere gegeben jeweils mit "Name", "Unterart" und
 "Art".
 
-Erstellen Sie eine Klasse "Tier" und legen Sie für jede CSV Zeile eine
-Tier-Instanz an.
+Erstellen Sie eine Klasse "at.spengergasse.tiere.Tier" und legen Sie für jede CSV Zeile eine
+at.spengergasse.tiere.Tier-Instanz an.
 
 Die HashMap hat:
 
--   key: die Tier-Art (z.B. "cat")
+-   key: die at.spengergasse.tiere.Tier-Art (z.B. "cat")
 -   value: ein Array von Tieren
 
 Nach dem Einlesen und Einordnen aller Zeilen sortieren Sie alle Arrays nach dem
