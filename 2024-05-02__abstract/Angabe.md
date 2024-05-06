@@ -48,12 +48,6 @@ Sie die vorhandene Methode!
 Wie in der Einleitung erwähnt, sind innerhalb der Abteilungen des Baukastens die Körper
 nach Farbe zu sortieren (alphabetisch), und bei Gleichheit nach Gewicht (absteigend)
 
-(3 Punkte)
-
----
-Maximal erreichbare Punkte: 23
-
-
 Gutes Gelingen!
 
 
