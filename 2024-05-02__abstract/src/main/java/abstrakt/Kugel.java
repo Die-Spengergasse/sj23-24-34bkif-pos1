@@ -1,10 +1,10 @@
 package abstrakt;
 
-public class Kugel extends Koerper {
+public class Kugel extends Bauklotz {
     private double r;
 
-    public Kugel(double sg, double r) {
-        super(sg);
+    public Kugel(double dichte, double r) {
+        super(dichte);
         this.r = r;
     }
 

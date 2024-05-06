@@ -1,10 +1,10 @@
 package abstrakt;
 
-public class Quader extends Koerper{
+public class Quader extends Bauklotz {
     private double a,b,c;
 
-    public Quader(double sg, double a, double b, double c) {
-        super(sg);
+    public Quader(double dichte, double a, double b, double c) {
+        super(dichte);
         this.a = a;
         this.b = b;
         this.c = c;

@@ -1,5 +1,18 @@
 # sj23-24-34bkif-pos1
 
+## Bis 16.5. Baukasten deutlich verbessern
+
+2 PLF: je 35%
+PROJ: 30%
+
+## 6.5. Streams API
+
+[JFOkus](<https://youtu.be/TCJdc9SYwlQ>)
+
+- kam mit java 8, 2014
+
+## 2.5. Polymorphismus anhand vom Baukasten
+
 ## 29.4
 
 - Vererbung anhand von Skriptum
