@@ -1,33 +1,60 @@
 package abstrakt;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        Bastel b = new Bastel();
-        Bauklotz k1, k2, k3, k4;
-        k1 = new Quader(1.5, 2, 3, 4);
-        k2 = new Kugel(5, 5);
-        k3 = new Wuerfel(1, 3);
-        HashMap<Class, Collection<Bauklotz>> baukastenNachAbteilungen = new HashMap<>();
-        // z.B abstrakt.Quader
         ArrayList<Bauklotz> sammlung = new ArrayList<>();
-        sammlung.add(k1);
-        sammlung.add(k2);
-        sammlung.add(k3);
-        //     sammlung.sort((x,y) -> Math.round((float)(x.gewicht()-y.gewicht())));
-        sammlung.stream().forEach((e) -> System.out.println(e));
-        sammlung.stream().forEach((e) -> System.out.println(e.gewicht()));
-        sammlung.stream()
-                .sorted((x, y) -> Math.round((float) (x.gewicht() - y.gewicht())))
-                .mapToDouble((k) -> k.gewicht())
-                .forEach((g) -> System.out.println(g));
-        double gesamt = sammlung.stream()
-                .mapToDouble((k) -> k.gewicht())
-                .sum();
-        System.out.println(gesamt);
+        try (BufferedReader input = new BufferedReader(new FileReader("geschenke.csv"))) {
+            HashMap<Class, ArrayList<Bauklotz>> baukastenNachAbteilungen = new HashMap<>();
+            input.lines().map((line) -> {
+                String[] splitter = line.split(";");
+                String erstesWort = splitter[0];
+                Bauklotz aktuell;
+                switch (erstesWort) {
+                    case "Würfel": {
+                        aktuell = new Wuerfel(splitter);
+                        break;
+                    }
+                    case "Quader": {
+                        aktuell = new Quader(splitter);
+                        break;
+                    }
+                    case "Zylinder": {
+                        aktuell = new Zylinder(splitter);
+                        break;
+                    }
+                    case "Kugel": {
+                        aktuell = new Kugel(splitter);
+                        break;
+                    }
+                    default: {
+                        aktuell = null;
+                    }
+                }
+                return aktuell;
+            }).filter(bauklotz -> {
+                return bauklotz != null;
+            }).forEach(bauklotz -> {
+                Class klasse = bauklotz.getClass();
+                if (!baukastenNachAbteilungen.containsKey(klasse)) {
+                    baukastenNachAbteilungen.put(klasse, new ArrayList<>());
+                }
+                baukastenNachAbteilungen.get(klasse).add(bauklotz);
+            });
+            for (Class c : baukastenNachAbteilungen.keySet()) {
+                ArrayList l = baukastenNachAbteilungen.get(c);
+                l.sort(null);
+                System.out.println("Abteilung: " + c.getClass());
+                l.forEach(b-> System.out.println(b));
+            }
+        } catch (Exception e) {
+            System.err.println("ERROR: " + e.getMessage());
+            System.exit(1);
+        }
 
     }
 }
