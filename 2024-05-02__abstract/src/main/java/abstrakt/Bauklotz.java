@@ -46,7 +46,6 @@ public abstract class Bauklotz implements Comparable<Bauklotz> {
         return this.volumen() * this.dichte;
     }
 
-
     public void setDichte(double dichte) {
         if (dichte < 0) {
             throw new IllegalArgumentException("Spezifisches Gewicht sollte nicht negativ sein");
@@ -60,6 +59,6 @@ public abstract class Bauklotz implements Comparable<Bauklotz> {
     }
 
     public String toString() {
-        return this.getClass().getName().split("\\.")[1] + " Volumen: " + this.volumen() + " Gewicht: " + this.gewicht();
+        return String.format("%s, V: %.2f, G: %.2f, %s,%s", this.getClass().getName().split("\\.")[1], this.volumen(), this.gewicht(), this.farbe, this.material);
     }
 }
