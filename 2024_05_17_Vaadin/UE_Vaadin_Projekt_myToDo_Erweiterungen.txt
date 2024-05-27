@@ -1,0 +1,25 @@
+Übung Vaadin ToDo - Erweiterungen
+=================================
+
+1) Benennen Sie die Überschrift von "Vaadin ToDo" auf "Meine ToDo-Liste" um
+
+2) Das Textfield und der Button "Add" sollen immer unter der Überschrift angezeigt werden, auch wenn es ToDos gibt
+
+3) "Speichern"
+Erweitern Sie die MainView um einen Button "Speichern"
+Der Button soll nur angezeigt werden, wenn es zumindest ein ToDo gibt
+Die Bezeichnungen aller vorhanden ToDos werden in die Textdatei "todos.txt" zeilenweise gespeichert
+
+4) "Anzahl ToDos"
+Erweitern Sie die MainView um einen Button "Anzahl ToDos"
+Die Anzahl der ToDos wird in einer Notification ausgegeben
+
+5) "Unerledigte ToDos"
+Erweitern Sie die MainView um einen Button "Unerledigte ToDos"
+Ein ToDo ist unerledigt, wenn die Checkbox nicht markiert ist (not checked) 
+Die Anzahl der unerledigten ToDos wird in einer Notification ausgegeben
+
+
+
+
+
