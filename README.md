@@ -10,7 +10,7 @@ Im Ordner von 18.4.
 - Collections.shuffle()
 - list.sort((a,b) -> random.nextInt(-1 .. +1)
 
-2) Einlesen und sortieren zB
+2) Einlesen der gemischten Datei und diese sortieren zB so:
 
 (Klasse Kennzeichen implements Comparable<Kennzeichen>)
 
