@@ -1,5 +1,32 @@
 # sj23-24-34bkif-pos1
 
+## 2024-06-13__Übung_Nummerntafeln
+
+Im Ordner von 18.4.
+
+1) Datei einlesen und mischen und gemischt in eine neue Datei rausschreiben (kennzeichen_gemischt.csv)
+
+- zu Fuß wie gerade erklärt
+- Collections.shuffle()
+- list.sort((a,b) -> random.nextInt(-1 .. +1)
+
+2) Einlesen und sortieren zB
+
+(Klasse Kennzeichen implements Comparable<Kennzeichen>)
+
+Burgenland:
+  E;Eisenstadt
+  EU;Eisenstadt Umgebung
+  GS;Güssing
+  JE;Jennersdorf
+  MA;Mattersburg
+  ND;Neusiedl am See
+  OP;Oberpullendorf
+  OW;Oberwart
+.
+.
+.
+ 
 ## Bis 16.5. Baukasten deutlich verbessern
 
 2 PLF: je 35%
